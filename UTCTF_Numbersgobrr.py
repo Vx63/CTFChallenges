@@ -28,9 +28,9 @@ def decrypt(ciphertext, seed):
     potFlag = ''
     # Try to decode. If it raises an error, just continue.
     try:
-    	potFlag = unpad(decrypted, AES.block_size).decode()
+        potFlag = unpad(decrypted, AES.block_size).decode()
     except:
-    	pass
+        pass
     return potFlag
 
 # Given ciphertext and bruteforcing the seed
